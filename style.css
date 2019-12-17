@@ -1,0 +1,157 @@
+body{
+    font-family:Roboto, sans-serif;
+    margin:0;
+}
+
+.bg-1{
+    background-color:#FF851B;
+    color:white;
+}
+
+.navbar{
+    width:100%;
+    overflow:auto;
+    background:linear-gradient(to right, #ff851B, #E57718);
+    color:white;
+    height:40px;
+}
+
+.navbar-logo{
+    float:left;
+    padding:10px;
+    cursor:pointer;
+}
+
+.navbar-items{
+    float:right;
+    width:calc(100% - 130px);
+}
+
+.navbar-item{
+    float:left;
+    cursor:pointer;
+    text-align:center;
+    background-position:center;
+    background-size:cover;
+    box-sizing:border-box;
+    width:20%;
+}
+
+.navbar-item-text.first{
+    border-left:none;
+}
+
+.navbar-item-text{
+    padding:10px;
+    background:rgba(0,0,0,0.4);
+    height:40px;
+    width:100%;
+    box-sizing: border-box;
+    transition:background-color 0.2s ease;
+    border-left: 1px solid rgba(255,255,255,0.6);
+}
+
+.navbar-item:hover .navbar-item-text{
+    background-color:rgba(0,0,0,0.2);
+}
+
+i{
+    padding:0 4px;
+}
+
+.overview-splashtext{
+    width:100%;
+    font-size:4vw;
+    text-align:center;
+    padding:120px 0;
+    color:rgba(0,0,0,0.6);
+}
+
+.overview-container{
+    background:url("img/overview/overview-splash.jpg");
+    background-position:center;
+    background-size:cover;
+    height:calc(100% - 40px);
+    display: flex;
+    flex-flow: column;
+}
+
+.overview-section{
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    color:white;
+    
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.footer{
+    position:fixed;
+    top:100%;
+}
+
+.footer-trigger{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    padding:20px;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.footer-trigger:hover{
+    transform:scale(1.2);
+}
+
+.footer-trigger i{
+    border-radius:50%;
+    width:16px;
+    height:16px;
+    padding:8px;
+    background:rgba(255,255,255,0.5);
+    text-align:center;
+    box-shadow:0px 1px 5px rgba(0,0,0,0.5);
+}
+
+.thumbnail{
+    width:30vw;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition:transform 0.2s ease;
+    cursor:pointer;
+    margin-right:4vw;
+    text-shadow:0 0 10px black;
+}
+
+.thumbnail:hover{
+    transform:scale(1.05);
+}
+
+.overview-list{
+    flex: 1 1 auto;
+    display: flex;
+    width: 100%;
+    padding:10px;
+}
+
+.overview-heading{
+    padding:10px;
+}
+
+.thumbnail-duration{
+    position: absolute;
+    bottom:4px;
+    right:4px;
+
+}
+
+.thumbnail-text{
+    font-size:5vw;
+    padding: 0px 10px;
+    text-align:center;
+}

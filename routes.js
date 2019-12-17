@@ -5,7 +5,7 @@ const modules = {
     'footer':'src/footer/footer.html'
 }
 
-const firstModules=['navbar','overview','chartview','footer']
+const firstModules=['navbar','overview','footer']
 
 
 function loadModule(name, callback) {
