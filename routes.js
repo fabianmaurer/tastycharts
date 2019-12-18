@@ -5,7 +5,7 @@ const modules = {
     'footer':'src/footer/footer.html'
 }
 
-const firstModules=['navbar','overview','footer']
+const firstModules=['navbar','overview','footer','chartview']
 
 
 function loadModule(name, callback) {
@@ -17,4 +17,17 @@ function init() {
     for (let m of firstModules) {
         loadModule(m, null)
     }
+}
+
+function showRecipe(recipe){
+    console.log('hi')
+    $('#overview-container').addClass('hidden')
+    $('#chartview-container').removeClass('hidden')
+    loadRecipe(recipe)
+}
+
+function showLandingPage(){
+    console.log('ho')
+    $('#chartview-container').addClass('hidden')
+    $('#overview-container').removeClass('hidden')
 }

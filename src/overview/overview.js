@@ -20,5 +20,8 @@ function fillNewest(count){
         $t.append($text)
         $t.append($dur)
         $('.overview-list').append($t)
+        $t.click(function(){
+            showRecipe(r)
+        })
     }
 }

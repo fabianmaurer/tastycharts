@@ -4,6 +4,8 @@ const recipes=[
         category:'basics',
         image:'img/recipes/burger.jpg',
         duration:30,
+        vegetarian:false,
+        vegan:false,
         flow:[
         ]
     },
@@ -12,29 +14,82 @@ const recipes=[
         category:'italian',
         image:'img/recipes/carbonara.jpg',
         duration:60,
+        vegetarian:false,
+        vegan:false,
         flow:[
         ]
+    },
+    {
+        name:'Pizza',
+        category:'italian',
+        image:'img/recipes/pizza.jpg',
+        duration:60,
+        vegetarian:true,
+        vegan:false,
+        flow:[]
+    },
+    {
+        name:'Bolognese',
+        category:'italian',
+        image:'img/recipes/bolognese.jpg',
+        duration:45,
+        vegetarian:false,
+        vegan:false,
+        flow:[]
+    },
+    {
+        name:'Risotto',
+        category:'italian',
+        image:'img/recipes/risotto.jpg',
+        duration:45,
+        vegetarian:true,
+        vegan:false,
+        flow:[]
     },
     {
         name:'Quesadillas',
         category:'mexican',
         image:'img/recipes/quesadillas.jpg',
         duration:30,
+        vegetarian:true,
+        vegan:false,
         flow:[
         ]
-    },
-    {
-        name:'Tikka Masala',
-        category:'asian',
-        image:'img/recipes/tikkamasala.jpg',
-        duration:90,
-        flow:[]
     },
     {
         name:'Cookies',
         category:'sweet',
         image:'img/recipes/cookies.jpg',
         duration:120,
+        vegetarian:true,
+        vegan:false,
+        flow:[]
+    },
+    {
+        name:'Steak',
+        category:'basics',
+        image:'img/recipes/steak.jpg',
+        duration:30,
+        vegetarian:false,
+        vegan:false,
+        flow:[]
+    },
+    {
+        name:'Tikka Masala',
+        category:'asian',
+        image:'img/recipes/tikkamasala.jpg',
+        duration:90,
+        vegetarian:false,
+        vegan:false,
+        flow:[]
+    },
+    {
+        name:'Cheesecake',
+        category:'sweet',
+        image:'img/recipes/cheesecake.jpg',
+        duration:120,
+        vegetarian:true,
+        vegan:false,
         flow:[]
     }
 ]

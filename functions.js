@@ -5,6 +5,15 @@ function getRecipes(category){
             results.push(r)
         }
     }
+    results.sort(function(a,b){
+        if(a.vegan && !b.vegan) return 1;
+        if(!a.vegan && b.vegan) return -1;
+        if(a.vegetarian && !b.vegetarian) return 1;
+        if(!a.vegetarian && b.vegetarian) return -1;
+        if(a.name<b.name) return -1;
+        else return 1;
+    })
+    console.log(results)
     return results
 }
 
